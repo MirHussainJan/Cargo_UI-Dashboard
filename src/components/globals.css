@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+.left img {
+    width: 40px;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.end img {
+    width: 100%;
+}
+
+.img-1 {
+    bottom: -50%;
+    left: 0;
+}
+
+.img-2 {
+    top: -40%;
+    right: 60%;
+}
+
+.img-3 {
+    bottom: -30%;
+    right: 5%;
+}
+
+.home-wrapper {
+    height: calc(100vh - 90px) !important;
+}
+
+.nav {
+    height: 90px;
+}
+
+/* Remove the default chevron icon */
+.no-chevron {
+    appearance: none;
+    /* For modern browsers */
+    -webkit-appearance: none;
+    /* For Safari */
+    -moz-appearance: none;
+    /* For Firefox */
+}
+
+/* Style adjustments */
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper select {
+    padding-left: 2.5rem;
+    /* Adjust to make space for the icon */
+}
+
+.select-wrapper .fa-plus {
+    position: absolute;
+    left: 50%;
+    /* Adjust to fit your design */
+    top: 50%;
+    transform: translateY(-50%, -50%);
+    pointer-events: none;
+}
+
+.form-group input,
+select {
+    outline: none;
+}
+
+.kg-placeholder {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
+    /* Adjust as needed */
+    color: #6c757d;
+    /* Adjust color as needed */
+    pointer-events: none;
+    /* This ensures that the span doesn't interfere with input */
+}
+
+.tablerow {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.text-apna {
+    color: #333;
+}
+
+.bg-doodle {
+    position: relative;
+}
+
+.bg-doodle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: url('../assets/doodle-art.jpg') center/cover no-repeat fixed;
+    filter: blur(12px) brightness(0.65);
+    /* Adjust the blur and brightness as needed */
+    z-index: -1;
+    /* Ensure the background remains behind other content */
+}
+
+.status p {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+    /* Increased margin for better spacing */
+}
+
+.status .dot {
+    width: 12px;
+    /* Increased size for better visibility */
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.status .dot.checking {
+    background-color: #F8D522;
+}
+
+.status .dot.in-transit {
+    background-color: #F8D522;
+}
+
+.status .dot.out-for-delivery {
+    background-color: #F8D522;
+}
+
+.sticky-pie {
+    position: sticky;
+    top: 0;
+    /* Adjust this value as needed */
+    height: 100vh;
+    /* Full height */
+    overflow: hidden;
+    /* Prevent overflow */
+}
+
+.orders-table-container {
+    overflow-y: auto;
+    max-height: 95vh;
+}
+
+/* Additional styles to ensure smooth scrolling */
+.orders-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders-table-container thead tr {
+    position: sticky;
+    top: -2px;
+    z-index: 1;
+}
+
+.h-100vh {
+    height: 100vh !important;
+}
+
+.header-card {
+    transition: all 0.3s;
+}
+
+.header-card:hover {
+    scale: 1.01;
+}
+
+.orders {
+    transition: all 0.3s;
+}
+
+.orders:hover .truck-image img {
+    transform: translateX(0%);
+}
+
+.status .fw-bold {
+    margin-left: 10px;
+    /* Spacing between label and value */
+}
+
+.truck-image {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.truck-img {
+    width: 70%;
+    /* Adjust width to 70% */
+    height: auto;
+}
+
+.eye {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-apna:hover {
+    background-color: #019071 !important;
+}
+
+.input_wrap {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+form label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.95rem;
+    color: black;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+form input:focus {
+    border-bottom: 1px solid #F8D522;
+}
+
+form input:focus+label,
+form input:valid+label {
+    color: #F8D522;
+    top: -2px;
+    font-size: 0.75rem;
+}
+
+.form-control {
+    box-shadow: 0 0 0 0 !important;
+}
+
+.forms {
+    position: relative;
+}
+
+.log-in {
+    position: absolute;
+}
+
+.log-in,
+.sign-up {
+    transition: all 0.5s;
+}
+
+.sign-up {
+    transform: translateX(-120%);
+}
+
+.input-border {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-size: 0.95rem;
+    transition: 0.4s ease;
+}
+
+.input-border input {
+    margin-bottom: 10px;
+}
+
+.input-border p {
+    margin-bottom: 10px !important;
+}
+
+.btn-outline-apna {
+    border: 1px solid black !important;
+    color: #F8D522 !important;
+    transition: all 0.3s;
+}
+
+.forms input,
+.forms select {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-size: 0.95rem;
+    transition: 0.4s ease;
+}
+
+.fs-apna {
+    font-size: 0.75rem;
+}
+
+.mirror {
+    transform: scaleX(-1);
+}
+
+.truck-image img {
+    transition: all 0.6s;
+    transform: translateX(-10%);
+}
+
+.close-icon {
+    top: 20px;
+    right: 40px;
+}
+
+.form-underlay {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.75);
+    backdrop-filter: blur(8px);
+    /* Adjust the blur amount as needed */
+}
+
+.border-bottom {
+    border-bottom: 1px solid black !important;
+}
+
+.border {
+    border: 1px solid black !important;
+}
+
+.border-apna {
+    border: 1px solid #F8D522 !important;
+}
+
+.border-end {
+    border-right: 1px solid black !important;
+}
+
+.book-form {
+    top: 0;
+    left: 0;
+    height: 100vw;
+    height: 100%;
+    background-color: rgba(199, 182, 182, 0);
+}
+
+.bg-active {
+    background-color: #F8D522 !important;
+    color: white !important;
+    border: 1px solid black !important;
+}
+
+.btn-active {
+    position: relative;
+}
+
+.row .sidebar {
+    height: 100vh;
+}
+
+.btn-active::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #F8D522;
+    transition: width 0.3s;
+    /* Changed to transition only the width property */
+}
+
+.btn-active:hover::after {
+    width: 100%;
+}
+
+.pointer {
+    cursor: pointer !important;
+}
+
+.pt-6 {
+    padding-top: 4.2rem;
+}
+
+.typewriter-cursor {
+    font-size: 0;
+    line-height: 0;
+}
+
+.color-apna {
+    color: #FFCB00 !important;
+}
+
+.text-apna {
+    font-family: rajdhani !important;
+}
+
+.text-second {
+    font-family: 'be vietnam pro', sans-serif !important;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+.cards {
+    margin-top: -45px !important;
+}
+
+hr {
+    color: black !important;
+}
+
+.line-spacing {
+    line-height: 30px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.underlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.75);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000 !important;
+}
+
+.confirmation-modal,
+.update-modal {
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.modal-buttons .btn {
+    width: 100px;
+}
+
+.order-details-card {
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .headings h5 {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .contact-button p {
+        display: none;
+    }
+
+    .close-icon {
+        top: 8px;
+        left: 50% !important;
+        transform: translate(-50%) !important;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .nav {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .right {
+        gap: 5px !important;
+    }
+
+    .close-icon {
+        top: 8px;
+        left: 50% !important;
+        transform: translate(-50%) !important;
+    }
+}
